@@ -14,6 +14,11 @@
 		9C0202A32809EA0E00070947 /* MyMealTime.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C0202A12809EA0E00070947 /* MyMealTime.xcdatamodeld */; };
 		9C0202A52809EA0E00070947 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0202A42809EA0E00070947 /* Assets.xcassets */; };
 		9C0202A82809EA0E00070947 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0202A62809EA0E00070947 /* LaunchScreen.storyboard */; };
+		9C0202B02809ECC400070947 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0202AF2809ECC400070947 /* CoreDataStack.swift */; };
+		9C0202C82809F68B00070947 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0202C42809F68B00070947 /* User+CoreDataClass.swift */; };
+		9C0202C92809F68B00070947 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0202C52809F68B00070947 /* User+CoreDataProperties.swift */; };
+		9C0202CA2809F68B00070947 /* Meal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0202C62809F68B00070947 /* Meal+CoreDataClass.swift */; };
+		9C0202CB2809F68B00070947 /* Meal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0202C72809F68B00070947 /* Meal+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		9C0202A42809EA0E00070947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C0202A72809EA0E00070947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C0202A92809EA0E00070947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C0202AF2809ECC400070947 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		9C0202C42809F68B00070947 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C0202C52809F68B00070947 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9C0202C62809F68B00070947 /* Meal+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9C0202C72809F68B00070947 /* Meal+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Meal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,7 @@
 		9C02028C2809EA0E00070947 = {
 			isa = PBXGroup;
 			children = (
+				9C0202CC2809F6D000070947 /* CoreData Entities */,
 				9C0202972809EA0E00070947 /* MyMealTime */,
 				9C0202962809EA0E00070947 /* Products */,
 			);
@@ -61,6 +72,7 @@
 				9C0202982809EA0E00070947 /* AppDelegate.swift */,
 				9C02029A2809EA0E00070947 /* SceneDelegate.swift */,
 				9C02029C2809EA0E00070947 /* ViewController.swift */,
+				9C0202AF2809ECC400070947 /* CoreDataStack.swift */,
 				9C02029E2809EA0E00070947 /* Main.storyboard */,
 				9C0202A42809EA0E00070947 /* Assets.xcassets */,
 				9C0202A62809EA0E00070947 /* LaunchScreen.storyboard */,
@@ -68,6 +80,17 @@
 				9C0202A12809EA0E00070947 /* MyMealTime.xcdatamodeld */,
 			);
 			path = MyMealTime;
+			sourceTree = "<group>";
+		};
+		9C0202CC2809F6D000070947 /* CoreData Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9C0202C72809F68B00070947 /* Meal+CoreDataProperties.swift */,
+				9C0202C62809F68B00070947 /* Meal+CoreDataClass.swift */,
+				9C0202C52809F68B00070947 /* User+CoreDataProperties.swift */,
+				9C0202C42809F68B00070947 /* User+CoreDataClass.swift */,
+			);
+			path = "CoreData Entities";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +164,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0202B02809ECC400070947 /* CoreDataStack.swift in Sources */,
 				9C02029D2809EA0E00070947 /* ViewController.swift in Sources */,
+				9C0202C82809F68B00070947 /* User+CoreDataClass.swift in Sources */,
+				9C0202C92809F68B00070947 /* User+CoreDataProperties.swift in Sources */,
 				9C0202992809EA0E00070947 /* AppDelegate.swift in Sources */,
+				9C0202CB2809F68B00070947 /* Meal+CoreDataProperties.swift in Sources */,
 				9C02029B2809EA0E00070947 /* SceneDelegate.swift in Sources */,
+				9C0202CA2809F68B00070947 /* Meal+CoreDataClass.swift in Sources */,
 				9C0202A32809EA0E00070947 /* MyMealTime.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

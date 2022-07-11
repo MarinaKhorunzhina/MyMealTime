@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Meal" representedClassName="Meal" syncable="YES">
+    <entity name="Meal" representedClassName="Meal" syncable="YES" codeGenerationType="class">
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="meals" inverseEntity="User"/>
     </entity>
-    <entity name="User" representedClassName="User" syncable="YES">
+    <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String"/>
-        <relationship name="meals" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Meal" inverseName="user" inverseEntity="Meal"/>
+        <relationship name="meals" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Meal" inverseName="user" inverseEntity="Meal"/>
     </entity>
     <elements>
-        <element name="Meal" positionX="-303.03125" positionY="-56.4765625" width="128" height="73"/>
-        <element name="User" positionX="-18" positionY="27" width="128" height="73"/>
+        <element name="Meal" positionX="-518.28515625" positionY="-66.95703125" width="128" height="73"/>
+        <element name="User" positionX="-859.05859375" positionY="-144.171875" width="128" height="73"/>
     </elements>
 </model>
